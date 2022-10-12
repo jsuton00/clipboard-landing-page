@@ -1,0 +1,42 @@
+.hero {
+	&-brand-logo {
+		width: 100%;
+		font-size: 8rem;
+		color: $strongCyan;
+		text-align: center;
+	}
+	&-heading-text {
+		width: 100%;
+		font-weight: $baiJamjuree-semibold;
+		padding: 0.5rem 0;
+		text-align: center;
+	}
+	&-text {
+		width: 100%;
+		padding: 0 12rem 1rem;
+		color: $grayishBlue;
+		text-align: center;
+
+		@media (max-width: 990px) {
+			padding: 0 $spacing-base;
+		}
+	}
+	&-download {
+		&-row {
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			padding: 0.5rem 0;
+		}
+		&-section {
+			flex-basis: 35%;
+			width: 100%;
+			text-align: center;
+
+			@media (max-width: 990px) {
+				flex-basis: 95%;
+				margin-bottom: 0.5rem;
+			}
+		}
+	}
+}

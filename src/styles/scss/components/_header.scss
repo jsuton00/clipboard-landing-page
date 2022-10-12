@@ -1,0 +1,39 @@
+.header {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+
+	&-bg-image-container {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -1;
+		width: 100%;
+		max-width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	&-bg-image {
+		width: 100%;
+		max-width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0 auto;
+		-o-object-fit: cover;
+		object-fit: cover;
+		-o-object-position: top right;
+		object-position: top right;
+	}
+
+	&-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		padding: 1rem;
+	}
+}

@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import AccessClipboardSection from './components/AccessClipboardSection';
+import ClipboardForSection from './components/ClipboardForSection';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import KeepTrackSection from './components/KeepTrackSection';
+import SuperChargeSection from './components/SuperChargeSection';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<div className="app">
+			<Header />
+			<main className="main">
+				<div className="main-content container">
+					<KeepTrackSection />
+					<AccessClipboardSection />
+					<SuperChargeSection />
+					<ClipboardForSection />
+				</div>
+			</main>
+			<Footer />
+		</div>
+	);
+};
 
 export default App;
